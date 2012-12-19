@@ -20,7 +20,7 @@ int64_t __lcmt_hubo_jointcommand_hash_recursive(const __lcm_hash_ptr *p)
     const __lcm_hash_ptr cp = { p, (void*)__lcmt_hubo_jointcommand_get_hash };
     (void) cp;
 
-    int64_t hash = 0x83f07373dfe97dedLL
+    int64_t hash = 0xf44e1915d869d6b4LL
          + __int64_t_hash_recursive(&cp)
          + __double_hash_recursive(&cp)
          + __double_hash_recursive(&cp)
@@ -88,82 +88,82 @@ int __lcmt_hubo_jointcommand_encode_array(void *buf, int offset, int maxlen, con
         thislen = __double_encode_array(buf, offset + pos, maxlen - pos, &(p[element].HP), 1);
         if (thislen < 0) return thislen; else pos += thislen;
 
-        thislen = __double_encode_array(buf, offset + pos, maxlen - pos, &(p[element].LSP), 1);
+        thislen = __double_encode_array(buf, offset + pos, maxlen - pos, &(p[element].JC_LSP), 1);
         if (thislen < 0) return thislen; else pos += thislen;
 
-        thislen = __double_encode_array(buf, offset + pos, maxlen - pos, &(p[element].LSR), 1);
+        thislen = __double_encode_array(buf, offset + pos, maxlen - pos, &(p[element].JC_LSR), 1);
         if (thislen < 0) return thislen; else pos += thislen;
 
-        thislen = __double_encode_array(buf, offset + pos, maxlen - pos, &(p[element].LSY), 1);
+        thislen = __double_encode_array(buf, offset + pos, maxlen - pos, &(p[element].JC_LSY), 1);
         if (thislen < 0) return thislen; else pos += thislen;
 
-        thislen = __double_encode_array(buf, offset + pos, maxlen - pos, &(p[element].LEP), 1);
+        thislen = __double_encode_array(buf, offset + pos, maxlen - pos, &(p[element].JC_LEP), 1);
         if (thislen < 0) return thislen; else pos += thislen;
 
-        thislen = __double_encode_array(buf, offset + pos, maxlen - pos, &(p[element].LWY), 1);
+        thislen = __double_encode_array(buf, offset + pos, maxlen - pos, &(p[element].JC_LWY), 1);
         if (thislen < 0) return thislen; else pos += thislen;
 
-        thislen = __double_encode_array(buf, offset + pos, maxlen - pos, &(p[element].LWR), 1);
+        thislen = __double_encode_array(buf, offset + pos, maxlen - pos, &(p[element].JC_LWR), 1);
         if (thislen < 0) return thislen; else pos += thislen;
 
-        thislen = __double_encode_array(buf, offset + pos, maxlen - pos, &(p[element].LWP), 1);
+        thislen = __double_encode_array(buf, offset + pos, maxlen - pos, &(p[element].JC_LWP), 1);
         if (thislen < 0) return thislen; else pos += thislen;
 
-        thislen = __double_encode_array(buf, offset + pos, maxlen - pos, &(p[element].RSP), 1);
+        thislen = __double_encode_array(buf, offset + pos, maxlen - pos, &(p[element].JC_RSP), 1);
         if (thislen < 0) return thislen; else pos += thislen;
 
-        thislen = __double_encode_array(buf, offset + pos, maxlen - pos, &(p[element].RSR), 1);
+        thislen = __double_encode_array(buf, offset + pos, maxlen - pos, &(p[element].JC_RSR), 1);
         if (thislen < 0) return thislen; else pos += thislen;
 
-        thislen = __double_encode_array(buf, offset + pos, maxlen - pos, &(p[element].RSY), 1);
+        thislen = __double_encode_array(buf, offset + pos, maxlen - pos, &(p[element].JC_RSY), 1);
         if (thislen < 0) return thislen; else pos += thislen;
 
-        thislen = __double_encode_array(buf, offset + pos, maxlen - pos, &(p[element].REP), 1);
+        thislen = __double_encode_array(buf, offset + pos, maxlen - pos, &(p[element].JC_REP), 1);
         if (thislen < 0) return thislen; else pos += thislen;
 
-        thislen = __double_encode_array(buf, offset + pos, maxlen - pos, &(p[element].RWY), 1);
+        thislen = __double_encode_array(buf, offset + pos, maxlen - pos, &(p[element].JC_RWY), 1);
         if (thislen < 0) return thislen; else pos += thislen;
 
-        thislen = __double_encode_array(buf, offset + pos, maxlen - pos, &(p[element].RWR), 1);
+        thislen = __double_encode_array(buf, offset + pos, maxlen - pos, &(p[element].JC_RWR), 1);
         if (thislen < 0) return thislen; else pos += thislen;
 
-        thislen = __double_encode_array(buf, offset + pos, maxlen - pos, &(p[element].RWP), 1);
+        thislen = __double_encode_array(buf, offset + pos, maxlen - pos, &(p[element].JC_RWP), 1);
         if (thislen < 0) return thislen; else pos += thislen;
 
-        thislen = __double_encode_array(buf, offset + pos, maxlen - pos, &(p[element].LHY), 1);
+        thislen = __double_encode_array(buf, offset + pos, maxlen - pos, &(p[element].JC_LHY), 1);
         if (thislen < 0) return thislen; else pos += thislen;
 
-        thislen = __double_encode_array(buf, offset + pos, maxlen - pos, &(p[element].LHR), 1);
+        thislen = __double_encode_array(buf, offset + pos, maxlen - pos, &(p[element].JC_LHR), 1);
         if (thislen < 0) return thislen; else pos += thislen;
 
-        thislen = __double_encode_array(buf, offset + pos, maxlen - pos, &(p[element].LHP), 1);
+        thislen = __double_encode_array(buf, offset + pos, maxlen - pos, &(p[element].JC_LHP), 1);
         if (thislen < 0) return thislen; else pos += thislen;
 
-        thislen = __double_encode_array(buf, offset + pos, maxlen - pos, &(p[element].LKP), 1);
+        thislen = __double_encode_array(buf, offset + pos, maxlen - pos, &(p[element].JC_LKP), 1);
         if (thislen < 0) return thislen; else pos += thislen;
 
-        thislen = __double_encode_array(buf, offset + pos, maxlen - pos, &(p[element].LAP), 1);
+        thislen = __double_encode_array(buf, offset + pos, maxlen - pos, &(p[element].JC_LAP), 1);
         if (thislen < 0) return thislen; else pos += thislen;
 
-        thislen = __double_encode_array(buf, offset + pos, maxlen - pos, &(p[element].LAR), 1);
+        thislen = __double_encode_array(buf, offset + pos, maxlen - pos, &(p[element].JC_LAR), 1);
         if (thislen < 0) return thislen; else pos += thislen;
 
-        thislen = __double_encode_array(buf, offset + pos, maxlen - pos, &(p[element].RHY), 1);
+        thislen = __double_encode_array(buf, offset + pos, maxlen - pos, &(p[element].JC_RHY), 1);
         if (thislen < 0) return thislen; else pos += thislen;
 
-        thislen = __double_encode_array(buf, offset + pos, maxlen - pos, &(p[element].RHR), 1);
+        thislen = __double_encode_array(buf, offset + pos, maxlen - pos, &(p[element].JC_RHR), 1);
         if (thislen < 0) return thislen; else pos += thislen;
 
-        thislen = __double_encode_array(buf, offset + pos, maxlen - pos, &(p[element].RHP), 1);
+        thislen = __double_encode_array(buf, offset + pos, maxlen - pos, &(p[element].JC_RHP), 1);
         if (thislen < 0) return thislen; else pos += thislen;
 
-        thislen = __double_encode_array(buf, offset + pos, maxlen - pos, &(p[element].RKP), 1);
+        thislen = __double_encode_array(buf, offset + pos, maxlen - pos, &(p[element].JC_RKP), 1);
         if (thislen < 0) return thislen; else pos += thislen;
 
-        thislen = __double_encode_array(buf, offset + pos, maxlen - pos, &(p[element].RAP), 1);
+        thislen = __double_encode_array(buf, offset + pos, maxlen - pos, &(p[element].JC_RAP), 1);
         if (thislen < 0) return thislen; else pos += thislen;
 
-        thislen = __double_encode_array(buf, offset + pos, maxlen - pos, &(p[element].RAR), 1);
+        thislen = __double_encode_array(buf, offset + pos, maxlen - pos, &(p[element].JC_RAR), 1);
         if (thislen < 0) return thislen; else pos += thislen;
 
     }
@@ -199,57 +199,57 @@ int __lcmt_hubo_jointcommand_encoded_array_size(const lcmt_hubo_jointcommand *p,
 
         size += __double_encoded_array_size(&(p[element].HP), 1);
 
-        size += __double_encoded_array_size(&(p[element].LSP), 1);
+        size += __double_encoded_array_size(&(p[element].JC_LSP), 1);
 
-        size += __double_encoded_array_size(&(p[element].LSR), 1);
+        size += __double_encoded_array_size(&(p[element].JC_LSR), 1);
 
-        size += __double_encoded_array_size(&(p[element].LSY), 1);
+        size += __double_encoded_array_size(&(p[element].JC_LSY), 1);
 
-        size += __double_encoded_array_size(&(p[element].LEP), 1);
+        size += __double_encoded_array_size(&(p[element].JC_LEP), 1);
 
-        size += __double_encoded_array_size(&(p[element].LWY), 1);
+        size += __double_encoded_array_size(&(p[element].JC_LWY), 1);
 
-        size += __double_encoded_array_size(&(p[element].LWR), 1);
+        size += __double_encoded_array_size(&(p[element].JC_LWR), 1);
 
-        size += __double_encoded_array_size(&(p[element].LWP), 1);
+        size += __double_encoded_array_size(&(p[element].JC_LWP), 1);
 
-        size += __double_encoded_array_size(&(p[element].RSP), 1);
+        size += __double_encoded_array_size(&(p[element].JC_RSP), 1);
 
-        size += __double_encoded_array_size(&(p[element].RSR), 1);
+        size += __double_encoded_array_size(&(p[element].JC_RSR), 1);
 
-        size += __double_encoded_array_size(&(p[element].RSY), 1);
+        size += __double_encoded_array_size(&(p[element].JC_RSY), 1);
 
-        size += __double_encoded_array_size(&(p[element].REP), 1);
+        size += __double_encoded_array_size(&(p[element].JC_REP), 1);
 
-        size += __double_encoded_array_size(&(p[element].RWY), 1);
+        size += __double_encoded_array_size(&(p[element].JC_RWY), 1);
 
-        size += __double_encoded_array_size(&(p[element].RWR), 1);
+        size += __double_encoded_array_size(&(p[element].JC_RWR), 1);
 
-        size += __double_encoded_array_size(&(p[element].RWP), 1);
+        size += __double_encoded_array_size(&(p[element].JC_RWP), 1);
 
-        size += __double_encoded_array_size(&(p[element].LHY), 1);
+        size += __double_encoded_array_size(&(p[element].JC_LHY), 1);
 
-        size += __double_encoded_array_size(&(p[element].LHR), 1);
+        size += __double_encoded_array_size(&(p[element].JC_LHR), 1);
 
-        size += __double_encoded_array_size(&(p[element].LHP), 1);
+        size += __double_encoded_array_size(&(p[element].JC_LHP), 1);
 
-        size += __double_encoded_array_size(&(p[element].LKP), 1);
+        size += __double_encoded_array_size(&(p[element].JC_LKP), 1);
 
-        size += __double_encoded_array_size(&(p[element].LAP), 1);
+        size += __double_encoded_array_size(&(p[element].JC_LAP), 1);
 
-        size += __double_encoded_array_size(&(p[element].LAR), 1);
+        size += __double_encoded_array_size(&(p[element].JC_LAR), 1);
 
-        size += __double_encoded_array_size(&(p[element].RHY), 1);
+        size += __double_encoded_array_size(&(p[element].JC_RHY), 1);
 
-        size += __double_encoded_array_size(&(p[element].RHR), 1);
+        size += __double_encoded_array_size(&(p[element].JC_RHR), 1);
 
-        size += __double_encoded_array_size(&(p[element].RHP), 1);
+        size += __double_encoded_array_size(&(p[element].JC_RHP), 1);
 
-        size += __double_encoded_array_size(&(p[element].RKP), 1);
+        size += __double_encoded_array_size(&(p[element].JC_RKP), 1);
 
-        size += __double_encoded_array_size(&(p[element].RAP), 1);
+        size += __double_encoded_array_size(&(p[element].JC_RAP), 1);
 
-        size += __double_encoded_array_size(&(p[element].RAR), 1);
+        size += __double_encoded_array_size(&(p[element].JC_RAR), 1);
 
     }
     return size;
@@ -281,82 +281,82 @@ int __lcmt_hubo_jointcommand_decode_array(const void *buf, int offset, int maxle
         thislen = __double_decode_array(buf, offset + pos, maxlen - pos, &(p[element].HP), 1);
         if (thislen < 0) return thislen; else pos += thislen;
 
-        thislen = __double_decode_array(buf, offset + pos, maxlen - pos, &(p[element].LSP), 1);
+        thislen = __double_decode_array(buf, offset + pos, maxlen - pos, &(p[element].JC_LSP), 1);
         if (thislen < 0) return thislen; else pos += thislen;
 
-        thislen = __double_decode_array(buf, offset + pos, maxlen - pos, &(p[element].LSR), 1);
+        thislen = __double_decode_array(buf, offset + pos, maxlen - pos, &(p[element].JC_LSR), 1);
         if (thislen < 0) return thislen; else pos += thislen;
 
-        thislen = __double_decode_array(buf, offset + pos, maxlen - pos, &(p[element].LSY), 1);
+        thislen = __double_decode_array(buf, offset + pos, maxlen - pos, &(p[element].JC_LSY), 1);
         if (thislen < 0) return thislen; else pos += thislen;
 
-        thislen = __double_decode_array(buf, offset + pos, maxlen - pos, &(p[element].LEP), 1);
+        thislen = __double_decode_array(buf, offset + pos, maxlen - pos, &(p[element].JC_LEP), 1);
         if (thislen < 0) return thislen; else pos += thislen;
 
-        thislen = __double_decode_array(buf, offset + pos, maxlen - pos, &(p[element].LWY), 1);
+        thislen = __double_decode_array(buf, offset + pos, maxlen - pos, &(p[element].JC_LWY), 1);
         if (thislen < 0) return thislen; else pos += thislen;
 
-        thislen = __double_decode_array(buf, offset + pos, maxlen - pos, &(p[element].LWR), 1);
+        thislen = __double_decode_array(buf, offset + pos, maxlen - pos, &(p[element].JC_LWR), 1);
         if (thislen < 0) return thislen; else pos += thislen;
 
-        thislen = __double_decode_array(buf, offset + pos, maxlen - pos, &(p[element].LWP), 1);
+        thislen = __double_decode_array(buf, offset + pos, maxlen - pos, &(p[element].JC_LWP), 1);
         if (thislen < 0) return thislen; else pos += thislen;
 
-        thislen = __double_decode_array(buf, offset + pos, maxlen - pos, &(p[element].RSP), 1);
+        thislen = __double_decode_array(buf, offset + pos, maxlen - pos, &(p[element].JC_RSP), 1);
         if (thislen < 0) return thislen; else pos += thislen;
 
-        thislen = __double_decode_array(buf, offset + pos, maxlen - pos, &(p[element].RSR), 1);
+        thislen = __double_decode_array(buf, offset + pos, maxlen - pos, &(p[element].JC_RSR), 1);
         if (thislen < 0) return thislen; else pos += thislen;
 
-        thislen = __double_decode_array(buf, offset + pos, maxlen - pos, &(p[element].RSY), 1);
+        thislen = __double_decode_array(buf, offset + pos, maxlen - pos, &(p[element].JC_RSY), 1);
         if (thislen < 0) return thislen; else pos += thislen;
 
-        thislen = __double_decode_array(buf, offset + pos, maxlen - pos, &(p[element].REP), 1);
+        thislen = __double_decode_array(buf, offset + pos, maxlen - pos, &(p[element].JC_REP), 1);
         if (thislen < 0) return thislen; else pos += thislen;
 
-        thislen = __double_decode_array(buf, offset + pos, maxlen - pos, &(p[element].RWY), 1);
+        thislen = __double_decode_array(buf, offset + pos, maxlen - pos, &(p[element].JC_RWY), 1);
         if (thislen < 0) return thislen; else pos += thislen;
 
-        thislen = __double_decode_array(buf, offset + pos, maxlen - pos, &(p[element].RWR), 1);
+        thislen = __double_decode_array(buf, offset + pos, maxlen - pos, &(p[element].JC_RWR), 1);
         if (thislen < 0) return thislen; else pos += thislen;
 
-        thislen = __double_decode_array(buf, offset + pos, maxlen - pos, &(p[element].RWP), 1);
+        thislen = __double_decode_array(buf, offset + pos, maxlen - pos, &(p[element].JC_RWP), 1);
         if (thislen < 0) return thislen; else pos += thislen;
 
-        thislen = __double_decode_array(buf, offset + pos, maxlen - pos, &(p[element].LHY), 1);
+        thislen = __double_decode_array(buf, offset + pos, maxlen - pos, &(p[element].JC_LHY), 1);
         if (thislen < 0) return thislen; else pos += thislen;
 
-        thislen = __double_decode_array(buf, offset + pos, maxlen - pos, &(p[element].LHR), 1);
+        thislen = __double_decode_array(buf, offset + pos, maxlen - pos, &(p[element].JC_LHR), 1);
         if (thislen < 0) return thislen; else pos += thislen;
 
-        thislen = __double_decode_array(buf, offset + pos, maxlen - pos, &(p[element].LHP), 1);
+        thislen = __double_decode_array(buf, offset + pos, maxlen - pos, &(p[element].JC_LHP), 1);
         if (thislen < 0) return thislen; else pos += thislen;
 
-        thislen = __double_decode_array(buf, offset + pos, maxlen - pos, &(p[element].LKP), 1);
+        thislen = __double_decode_array(buf, offset + pos, maxlen - pos, &(p[element].JC_LKP), 1);
         if (thislen < 0) return thislen; else pos += thislen;
 
-        thislen = __double_decode_array(buf, offset + pos, maxlen - pos, &(p[element].LAP), 1);
+        thislen = __double_decode_array(buf, offset + pos, maxlen - pos, &(p[element].JC_LAP), 1);
         if (thislen < 0) return thislen; else pos += thislen;
 
-        thislen = __double_decode_array(buf, offset + pos, maxlen - pos, &(p[element].LAR), 1);
+        thislen = __double_decode_array(buf, offset + pos, maxlen - pos, &(p[element].JC_LAR), 1);
         if (thislen < 0) return thislen; else pos += thislen;
 
-        thislen = __double_decode_array(buf, offset + pos, maxlen - pos, &(p[element].RHY), 1);
+        thislen = __double_decode_array(buf, offset + pos, maxlen - pos, &(p[element].JC_RHY), 1);
         if (thislen < 0) return thislen; else pos += thislen;
 
-        thislen = __double_decode_array(buf, offset + pos, maxlen - pos, &(p[element].RHR), 1);
+        thislen = __double_decode_array(buf, offset + pos, maxlen - pos, &(p[element].JC_RHR), 1);
         if (thislen < 0) return thislen; else pos += thislen;
 
-        thislen = __double_decode_array(buf, offset + pos, maxlen - pos, &(p[element].RHP), 1);
+        thislen = __double_decode_array(buf, offset + pos, maxlen - pos, &(p[element].JC_RHP), 1);
         if (thislen < 0) return thislen; else pos += thislen;
 
-        thislen = __double_decode_array(buf, offset + pos, maxlen - pos, &(p[element].RKP), 1);
+        thislen = __double_decode_array(buf, offset + pos, maxlen - pos, &(p[element].JC_RKP), 1);
         if (thislen < 0) return thislen; else pos += thislen;
 
-        thislen = __double_decode_array(buf, offset + pos, maxlen - pos, &(p[element].RAP), 1);
+        thislen = __double_decode_array(buf, offset + pos, maxlen - pos, &(p[element].JC_RAP), 1);
         if (thislen < 0) return thislen; else pos += thislen;
 
-        thislen = __double_decode_array(buf, offset + pos, maxlen - pos, &(p[element].RAR), 1);
+        thislen = __double_decode_array(buf, offset + pos, maxlen - pos, &(p[element].JC_RAR), 1);
         if (thislen < 0) return thislen; else pos += thislen;
 
     }
@@ -378,57 +378,57 @@ int __lcmt_hubo_jointcommand_decode_array_cleanup(lcmt_hubo_jointcommand *p, int
 
         __double_decode_array_cleanup(&(p[element].HP), 1);
 
-        __double_decode_array_cleanup(&(p[element].LSP), 1);
+        __double_decode_array_cleanup(&(p[element].JC_LSP), 1);
 
-        __double_decode_array_cleanup(&(p[element].LSR), 1);
+        __double_decode_array_cleanup(&(p[element].JC_LSR), 1);
 
-        __double_decode_array_cleanup(&(p[element].LSY), 1);
+        __double_decode_array_cleanup(&(p[element].JC_LSY), 1);
 
-        __double_decode_array_cleanup(&(p[element].LEP), 1);
+        __double_decode_array_cleanup(&(p[element].JC_LEP), 1);
 
-        __double_decode_array_cleanup(&(p[element].LWY), 1);
+        __double_decode_array_cleanup(&(p[element].JC_LWY), 1);
 
-        __double_decode_array_cleanup(&(p[element].LWR), 1);
+        __double_decode_array_cleanup(&(p[element].JC_LWR), 1);
 
-        __double_decode_array_cleanup(&(p[element].LWP), 1);
+        __double_decode_array_cleanup(&(p[element].JC_LWP), 1);
 
-        __double_decode_array_cleanup(&(p[element].RSP), 1);
+        __double_decode_array_cleanup(&(p[element].JC_RSP), 1);
 
-        __double_decode_array_cleanup(&(p[element].RSR), 1);
+        __double_decode_array_cleanup(&(p[element].JC_RSR), 1);
 
-        __double_decode_array_cleanup(&(p[element].RSY), 1);
+        __double_decode_array_cleanup(&(p[element].JC_RSY), 1);
 
-        __double_decode_array_cleanup(&(p[element].REP), 1);
+        __double_decode_array_cleanup(&(p[element].JC_REP), 1);
 
-        __double_decode_array_cleanup(&(p[element].RWY), 1);
+        __double_decode_array_cleanup(&(p[element].JC_RWY), 1);
 
-        __double_decode_array_cleanup(&(p[element].RWR), 1);
+        __double_decode_array_cleanup(&(p[element].JC_RWR), 1);
 
-        __double_decode_array_cleanup(&(p[element].RWP), 1);
+        __double_decode_array_cleanup(&(p[element].JC_RWP), 1);
 
-        __double_decode_array_cleanup(&(p[element].LHY), 1);
+        __double_decode_array_cleanup(&(p[element].JC_LHY), 1);
 
-        __double_decode_array_cleanup(&(p[element].LHR), 1);
+        __double_decode_array_cleanup(&(p[element].JC_LHR), 1);
 
-        __double_decode_array_cleanup(&(p[element].LHP), 1);
+        __double_decode_array_cleanup(&(p[element].JC_LHP), 1);
 
-        __double_decode_array_cleanup(&(p[element].LKP), 1);
+        __double_decode_array_cleanup(&(p[element].JC_LKP), 1);
 
-        __double_decode_array_cleanup(&(p[element].LAP), 1);
+        __double_decode_array_cleanup(&(p[element].JC_LAP), 1);
 
-        __double_decode_array_cleanup(&(p[element].LAR), 1);
+        __double_decode_array_cleanup(&(p[element].JC_LAR), 1);
 
-        __double_decode_array_cleanup(&(p[element].RHY), 1);
+        __double_decode_array_cleanup(&(p[element].JC_RHY), 1);
 
-        __double_decode_array_cleanup(&(p[element].RHR), 1);
+        __double_decode_array_cleanup(&(p[element].JC_RHR), 1);
 
-        __double_decode_array_cleanup(&(p[element].RHP), 1);
+        __double_decode_array_cleanup(&(p[element].JC_RHP), 1);
 
-        __double_decode_array_cleanup(&(p[element].RKP), 1);
+        __double_decode_array_cleanup(&(p[element].JC_RKP), 1);
 
-        __double_decode_array_cleanup(&(p[element].RAP), 1);
+        __double_decode_array_cleanup(&(p[element].JC_RAP), 1);
 
-        __double_decode_array_cleanup(&(p[element].RAR), 1);
+        __double_decode_array_cleanup(&(p[element].JC_RAR), 1);
 
     }
     return 0;
@@ -470,57 +470,57 @@ int __lcmt_hubo_jointcommand_clone_array(const lcmt_hubo_jointcommand *p, lcmt_h
 
         __double_clone_array(&(p[element].HP), &(q[element].HP), 1);
 
-        __double_clone_array(&(p[element].LSP), &(q[element].LSP), 1);
+        __double_clone_array(&(p[element].JC_LSP), &(q[element].JC_LSP), 1);
 
-        __double_clone_array(&(p[element].LSR), &(q[element].LSR), 1);
+        __double_clone_array(&(p[element].JC_LSR), &(q[element].JC_LSR), 1);
 
-        __double_clone_array(&(p[element].LSY), &(q[element].LSY), 1);
+        __double_clone_array(&(p[element].JC_LSY), &(q[element].JC_LSY), 1);
 
-        __double_clone_array(&(p[element].LEP), &(q[element].LEP), 1);
+        __double_clone_array(&(p[element].JC_LEP), &(q[element].JC_LEP), 1);
 
-        __double_clone_array(&(p[element].LWY), &(q[element].LWY), 1);
+        __double_clone_array(&(p[element].JC_LWY), &(q[element].JC_LWY), 1);
 
-        __double_clone_array(&(p[element].LWR), &(q[element].LWR), 1);
+        __double_clone_array(&(p[element].JC_LWR), &(q[element].JC_LWR), 1);
 
-        __double_clone_array(&(p[element].LWP), &(q[element].LWP), 1);
+        __double_clone_array(&(p[element].JC_LWP), &(q[element].JC_LWP), 1);
 
-        __double_clone_array(&(p[element].RSP), &(q[element].RSP), 1);
+        __double_clone_array(&(p[element].JC_RSP), &(q[element].JC_RSP), 1);
 
-        __double_clone_array(&(p[element].RSR), &(q[element].RSR), 1);
+        __double_clone_array(&(p[element].JC_RSR), &(q[element].JC_RSR), 1);
 
-        __double_clone_array(&(p[element].RSY), &(q[element].RSY), 1);
+        __double_clone_array(&(p[element].JC_RSY), &(q[element].JC_RSY), 1);
 
-        __double_clone_array(&(p[element].REP), &(q[element].REP), 1);
+        __double_clone_array(&(p[element].JC_REP), &(q[element].JC_REP), 1);
 
-        __double_clone_array(&(p[element].RWY), &(q[element].RWY), 1);
+        __double_clone_array(&(p[element].JC_RWY), &(q[element].JC_RWY), 1);
 
-        __double_clone_array(&(p[element].RWR), &(q[element].RWR), 1);
+        __double_clone_array(&(p[element].JC_RWR), &(q[element].JC_RWR), 1);
 
-        __double_clone_array(&(p[element].RWP), &(q[element].RWP), 1);
+        __double_clone_array(&(p[element].JC_RWP), &(q[element].JC_RWP), 1);
 
-        __double_clone_array(&(p[element].LHY), &(q[element].LHY), 1);
+        __double_clone_array(&(p[element].JC_LHY), &(q[element].JC_LHY), 1);
 
-        __double_clone_array(&(p[element].LHR), &(q[element].LHR), 1);
+        __double_clone_array(&(p[element].JC_LHR), &(q[element].JC_LHR), 1);
 
-        __double_clone_array(&(p[element].LHP), &(q[element].LHP), 1);
+        __double_clone_array(&(p[element].JC_LHP), &(q[element].JC_LHP), 1);
 
-        __double_clone_array(&(p[element].LKP), &(q[element].LKP), 1);
+        __double_clone_array(&(p[element].JC_LKP), &(q[element].JC_LKP), 1);
 
-        __double_clone_array(&(p[element].LAP), &(q[element].LAP), 1);
+        __double_clone_array(&(p[element].JC_LAP), &(q[element].JC_LAP), 1);
 
-        __double_clone_array(&(p[element].LAR), &(q[element].LAR), 1);
+        __double_clone_array(&(p[element].JC_LAR), &(q[element].JC_LAR), 1);
 
-        __double_clone_array(&(p[element].RHY), &(q[element].RHY), 1);
+        __double_clone_array(&(p[element].JC_RHY), &(q[element].JC_RHY), 1);
 
-        __double_clone_array(&(p[element].RHR), &(q[element].RHR), 1);
+        __double_clone_array(&(p[element].JC_RHR), &(q[element].JC_RHR), 1);
 
-        __double_clone_array(&(p[element].RHP), &(q[element].RHP), 1);
+        __double_clone_array(&(p[element].JC_RHP), &(q[element].JC_RHP), 1);
 
-        __double_clone_array(&(p[element].RKP), &(q[element].RKP), 1);
+        __double_clone_array(&(p[element].JC_RKP), &(q[element].JC_RKP), 1);
 
-        __double_clone_array(&(p[element].RAP), &(q[element].RAP), 1);
+        __double_clone_array(&(p[element].JC_RAP), &(q[element].JC_RAP), 1);
 
-        __double_clone_array(&(p[element].RAR), &(q[element].RAR), 1);
+        __double_clone_array(&(p[element].JC_RAR), &(q[element].JC_RAR), 1);
 
     }
     return 0;
