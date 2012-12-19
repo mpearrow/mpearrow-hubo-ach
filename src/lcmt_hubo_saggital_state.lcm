@@ -1,0 +1,41 @@
+// Note: this file was automatically generated using the
+// CoordinateFrame.generateLCMType() method.
+
+struct lcmt_hubo_saggital_state
+{
+  int64_t timestamp;
+
+  double base_link_x;
+  double base_link_z;
+  double base_link_p;
+  double HP;
+  double LSP;
+  double LEP;
+  double LWP;
+  double RSP;
+  double REP;
+  double RWP;
+  double LHP;
+  double LKP;
+  double LAP;
+  double RHP;
+  double RKP;
+  double RAP;
+  double base_link_xdot;
+  double base_link_zdot;
+  double base_link_pdot;
+  double HPdot;
+  double LSPdot;
+  double LEPdot;
+  double LWPdot;
+  double RSPdot;
+  double REPdot;
+  double RWPdot;
+  double LHPdot;
+  double LKPdot;
+  double LAPdot;
+  double RHPdot;
+  double RKPdot;
+  double RAPdot;
+}
+
