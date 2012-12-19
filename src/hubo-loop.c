@@ -62,6 +62,8 @@ ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include <inttypes.h>
 #include "ach.h"
 
+// for LCM
+#include <lcm/lcm.h>
 
 /* At time of writing, these constants are not defined in the headers */
 #ifndef PF_CAN
