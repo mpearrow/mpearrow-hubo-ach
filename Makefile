@@ -21,9 +21,9 @@ CAN_DEFS :=
 BINARIES := hubo-daemon hubo-console hubo-loop hubo-read hubo-ref-filter
 all : $(BINARIES)
 
-LIBS := -lach -lrt $(CAN_LIBS)
+LIBS := -lach -lrt -llcm $(CAN_LIBS)
 
-hubo_daemon_objs := src/hubo-daemonizer.o src/hubo-daemon.o src/hubo-jointparams.o $(CAN_OBJS)
+hubo_daemon_objs := src/lcmt_hubo_jointcommand.o src/hubo-daemonizer.o src/hubo-daemon.o src/hubo-jointparams.o $(CAN_OBJS)
 hubo_main_objs := src/hubo-main.o src/hubo-jointparams.o $(CAN_OBJS)
 
 hubo-daemon: $(hubo_daemon_objs)
@@ -42,10 +42,10 @@ hubo_console_objs := src/hubo-jointparams.o src/hubo-console.o
 hubo-console: $(hubo_console_objs)
 	$(CXX) $(CFLAGS) -o $@ $(hubo_console_objs) -lach -lreadline -lm -lc
 
-hubo_loop_objs := src/hubo-jointparams.o src/hubo-loop.o
+hubo_loop_objs := src/lcmt_hubo_jointcommand.o src/hubo-jointparams.o src/hubo-loop.o
 
 hubo-loop: $(hubo_loop_objs)
-	$(CC) $(CFLAGS) -o $@ $(hubo_loop_objs) -lach -lrt -lm -lc
+	$(CC) $(CFLAGS) -o $@ $(hubo_loop_objs) -lach -lrt -lm -lc -llcm
 
 %.o: %.c
 	$(CC) $(CFLAGS) -o $@ -c $<
