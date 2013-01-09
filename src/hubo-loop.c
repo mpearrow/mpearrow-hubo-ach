@@ -65,6 +65,9 @@ ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 // for LCM
 #include <lcm/lcm.h>
 
+// hubo's LCM types
+#include "lcmt_hubo_state.h"
+
 /* At time of writing, these constants are not defined in the headers */
 #ifndef PF_CAN
 #define PF_CAN 29
@@ -122,6 +125,9 @@ ach_channel_t chan_hubo_state;    // hubo-ach-state
 int debug = 0;
 int hubo_debug = 1;
 
+
+
+
 void huboLoop(struct hubo_param *H_param) {
         // get initial values for hubo
         struct hubo_ref H_ref;
@@ -129,7 +135,15 @@ void huboLoop(struct hubo_param *H_param) {
 	memset( &H_ref,   0, sizeof(H_ref));
 	memset( &H_state, 0, sizeof(H_state));
 
+	// set up LCM
+	lcm_t * lcm = lcm_create(NULL);
+	if(!lcm){
+	  printf("Error: could not initialize LCM!");
+	}
+	lcmt_hubo_state hubo_data;
         size_t fs;
+
+
         //int r = ach_get( &chan_hubo_ref, &H, sizeof(H), &fs, NULL, ACH_O_LAST );
         //assert( sizeof(H) == fs );
 	int r = ach_get( &chan_hubo_ref, &H_ref, sizeof(H_ref), &fs, NULL, ACH_O_LAST );
@@ -176,10 +190,14 @@ void huboLoop(struct hubo_param *H_param) {
 	double t0 = 0.0;
         double t1 = 0.0;
         int jnt = WST;
+	hubo_data.HUBO_STATE_LEFT_SHOULDER_PITCH = -1;
+	hubo_data.HUBO_STATE_LEFT_ELBOW_PITCH = -1;	
+	hubo_data.HUBO_STATE_RIGHT_SHOULDER_PITCH = -1;
+	hubo_data.HUBO_STATE_RIGHT_ELBOW_PITCH = -1;
         while(1) {
                 // wait until next shot
                 clock_nanosleep(0,TIMER_ABSTIME,&t, NULL);
-
+		
                 /* Get latest ACH message */
 		r = ach_get( &chan_hubo_ref, &H_ref, sizeof(H_ref), &fs, NULL, ACH_O_LAST );
 		if(ACH_OK != r) {
@@ -214,15 +232,17 @@ void huboLoop(struct hubo_param *H_param) {
 		else { 
 	                H_ref.ref[jnt] = dir*jntTmp; }
 		
-
-        //	printf("time = %ld.%d %f\n",tp_f.time,tp_f.millitm,tt);
-//                printf("A = %f\n",H.ref[jnt]);
-                //printf("Diff(t) = %f\n",(t0-t1));
-
                 ach_put( &chan_hubo_ref, &H_ref, sizeof(H_ref));
                 t.tv_nsec+=interval;
                 tsnorm(&t);
+		
+
+		// publish state via LCM
+		lcmt_hubo_state_publish(lcm, "HuboState", &hubo_data);
+
         }
+
+	lcm_destroy(lcm);
 
 
 }

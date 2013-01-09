@@ -11,12 +11,15 @@
 #include <stdio.h>
 #include <inttypes.h>
 #include <lcm/lcm.h>
-#include "exlcm_example_t.h"
+#include "lcmt_hubo_jointcommand.h"
 
 static void
 my_handler(const lcm_recv_buf_t *rbuf, const char * channel, 
-        const exlcm_example_t * msg, void * user)
+        const lcmt_hubo_jointcommand * msg, void * user)
 {
+
+
+  /*
     int i;
     printf("Received message on channel \"%s\":\n", channel);
     printf("  timestamp   = %"PRId64"\n", msg->timestamp);
@@ -31,6 +34,7 @@ my_handler(const lcm_recv_buf_t *rbuf, const char * channel,
     printf("\n");
     printf("  name        = '%s'\n", msg->name);
     printf("  enabled     = %d\n", msg->enabled);
+  */
 }
 
 int
@@ -40,7 +44,7 @@ main(int argc, char ** argv)
     if(!lcm)
         return 1;
 
-    exlcm_example_t_subscribe(lcm, "EXAMPLE", &my_handler, NULL);
+    lcmt_hubo_jointcommand_subscribe(lcm, "EXAMPLE", &my_handler, NULL);
 
     while(1)
         lcm_handle(lcm);

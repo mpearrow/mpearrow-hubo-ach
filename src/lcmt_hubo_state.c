@@ -20,7 +20,7 @@ int64_t __lcmt_hubo_state_hash_recursive(const __lcm_hash_ptr *p)
     const __lcm_hash_ptr cp = { p, (void*)__lcmt_hubo_state_get_hash };
     (void) cp;
 
-    int64_t hash = 0x7c4efbf65a4725d9LL
+    int64_t hash = 0xb2ed0660d225864fLL
          + __int64_t_hash_recursive(&cp)
          + __double_hash_recursive(&cp)
          + __double_hash_recursive(&cp)
@@ -148,82 +148,82 @@ int __lcmt_hubo_state_encode_array(void *buf, int offset, int maxlen, const lcmt
         thislen = __double_encode_array(buf, offset + pos, maxlen - pos, &(p[element].HP), 1);
         if (thislen < 0) return thislen; else pos += thislen;
 
-        thislen = __double_encode_array(buf, offset + pos, maxlen - pos, &(p[element].STATE_LSP), 1);
+        thislen = __double_encode_array(buf, offset + pos, maxlen - pos, &(p[element].HUBO_STATE_LEFT_SHOULDER_PITCH), 1);
         if (thislen < 0) return thislen; else pos += thislen;
 
-        thislen = __double_encode_array(buf, offset + pos, maxlen - pos, &(p[element].STATE_LSR), 1);
+        thislen = __double_encode_array(buf, offset + pos, maxlen - pos, &(p[element].HUBO_STATE_LEFT_SHOULDER_ROLL), 1);
         if (thislen < 0) return thislen; else pos += thislen;
 
-        thislen = __double_encode_array(buf, offset + pos, maxlen - pos, &(p[element].STATE_LSY), 1);
+        thislen = __double_encode_array(buf, offset + pos, maxlen - pos, &(p[element].HUBO_STATE_LEFT_SHOULDER_YAW), 1);
         if (thislen < 0) return thislen; else pos += thislen;
 
-        thislen = __double_encode_array(buf, offset + pos, maxlen - pos, &(p[element].STATE_LEP), 1);
+        thislen = __double_encode_array(buf, offset + pos, maxlen - pos, &(p[element].HUBO_STATE_LEFT_ELBOW_PITCH), 1);
         if (thislen < 0) return thislen; else pos += thislen;
 
-        thislen = __double_encode_array(buf, offset + pos, maxlen - pos, &(p[element].STATE_LWY), 1);
+        thislen = __double_encode_array(buf, offset + pos, maxlen - pos, &(p[element].HUBO_STATE_LEFT_WRIST_YAW), 1);
         if (thislen < 0) return thislen; else pos += thislen;
 
-        thislen = __double_encode_array(buf, offset + pos, maxlen - pos, &(p[element].STATE_LWR), 1);
+        thislen = __double_encode_array(buf, offset + pos, maxlen - pos, &(p[element].HUBO_STATE_LEFT_WRIST_ROLL), 1);
         if (thislen < 0) return thislen; else pos += thislen;
 
-        thislen = __double_encode_array(buf, offset + pos, maxlen - pos, &(p[element].STATE_LWP), 1);
+        thislen = __double_encode_array(buf, offset + pos, maxlen - pos, &(p[element].HUBO_STATE_LEFT_WRIST_PITCH), 1);
         if (thislen < 0) return thislen; else pos += thislen;
 
-        thislen = __double_encode_array(buf, offset + pos, maxlen - pos, &(p[element].STATE_RSP), 1);
+        thislen = __double_encode_array(buf, offset + pos, maxlen - pos, &(p[element].HUBO_STATE_RIGHT_SHOULDER_PITCH), 1);
         if (thislen < 0) return thislen; else pos += thislen;
 
-        thislen = __double_encode_array(buf, offset + pos, maxlen - pos, &(p[element].STATE_RSR), 1);
+        thislen = __double_encode_array(buf, offset + pos, maxlen - pos, &(p[element].HUBO_STATE_RIGHT_SHOULDER_ROLL), 1);
         if (thislen < 0) return thislen; else pos += thislen;
 
-        thislen = __double_encode_array(buf, offset + pos, maxlen - pos, &(p[element].STATE_RSY), 1);
+        thislen = __double_encode_array(buf, offset + pos, maxlen - pos, &(p[element].HUBO_STATE_RIGHT_SHOULDER_YAW), 1);
         if (thislen < 0) return thislen; else pos += thislen;
 
-        thislen = __double_encode_array(buf, offset + pos, maxlen - pos, &(p[element].STATE_REP), 1);
+        thislen = __double_encode_array(buf, offset + pos, maxlen - pos, &(p[element].HUBO_STATE_RIGHT_ELBOW_PITCH), 1);
         if (thislen < 0) return thislen; else pos += thislen;
 
-        thislen = __double_encode_array(buf, offset + pos, maxlen - pos, &(p[element].STATE_RWY), 1);
+        thislen = __double_encode_array(buf, offset + pos, maxlen - pos, &(p[element].HUBO_STATE_RIGHT_WRIST_YAW), 1);
         if (thislen < 0) return thislen; else pos += thislen;
 
-        thislen = __double_encode_array(buf, offset + pos, maxlen - pos, &(p[element].STATE_RWR), 1);
+        thislen = __double_encode_array(buf, offset + pos, maxlen - pos, &(p[element].HUBO_STATE_RIGHT_WRIST_ROLL), 1);
         if (thislen < 0) return thislen; else pos += thislen;
 
-        thislen = __double_encode_array(buf, offset + pos, maxlen - pos, &(p[element].STATE_RWP), 1);
+        thislen = __double_encode_array(buf, offset + pos, maxlen - pos, &(p[element].HUBO_STATE_RIGHT_WRIST_PITCH), 1);
         if (thislen < 0) return thislen; else pos += thislen;
 
-        thislen = __double_encode_array(buf, offset + pos, maxlen - pos, &(p[element].STATE_LHY), 1);
+        thislen = __double_encode_array(buf, offset + pos, maxlen - pos, &(p[element].HUBO_STATE_LEFT_HAND_YAW), 1);
         if (thislen < 0) return thislen; else pos += thislen;
 
-        thislen = __double_encode_array(buf, offset + pos, maxlen - pos, &(p[element].STATE_LHR), 1);
+        thislen = __double_encode_array(buf, offset + pos, maxlen - pos, &(p[element].HUBO_STATE_LEFT_HAND_ROLL), 1);
         if (thislen < 0) return thislen; else pos += thislen;
 
-        thislen = __double_encode_array(buf, offset + pos, maxlen - pos, &(p[element].STATE_LHP), 1);
+        thislen = __double_encode_array(buf, offset + pos, maxlen - pos, &(p[element].HUBO_STATE_LEFT_HAND_PITCH), 1);
         if (thislen < 0) return thislen; else pos += thislen;
 
-        thislen = __double_encode_array(buf, offset + pos, maxlen - pos, &(p[element].STATE_LKP), 1);
+        thislen = __double_encode_array(buf, offset + pos, maxlen - pos, &(p[element].HUBO_STATE_LEFT_KNEE_PITCH), 1);
         if (thislen < 0) return thislen; else pos += thislen;
 
-        thislen = __double_encode_array(buf, offset + pos, maxlen - pos, &(p[element].STATE_LAP), 1);
+        thislen = __double_encode_array(buf, offset + pos, maxlen - pos, &(p[element].HUBO_STATE_LEFT_ANKLE_PITCH), 1);
         if (thislen < 0) return thislen; else pos += thislen;
 
-        thislen = __double_encode_array(buf, offset + pos, maxlen - pos, &(p[element].STATE_LAR), 1);
+        thislen = __double_encode_array(buf, offset + pos, maxlen - pos, &(p[element].HUBO_STATE_LEFT_ANKLE_ROLL), 1);
         if (thislen < 0) return thislen; else pos += thislen;
 
-        thislen = __double_encode_array(buf, offset + pos, maxlen - pos, &(p[element].STATE_RHY), 1);
+        thislen = __double_encode_array(buf, offset + pos, maxlen - pos, &(p[element].HUBO_STATE_RIGHT_HIP_YAW), 1);
         if (thislen < 0) return thislen; else pos += thislen;
 
-        thislen = __double_encode_array(buf, offset + pos, maxlen - pos, &(p[element].STATE_RHR), 1);
+        thislen = __double_encode_array(buf, offset + pos, maxlen - pos, &(p[element].HUBO_STATE_RIGHT_HIP_ROLL), 1);
         if (thislen < 0) return thislen; else pos += thislen;
 
-        thislen = __double_encode_array(buf, offset + pos, maxlen - pos, &(p[element].STATE_RHP), 1);
+        thislen = __double_encode_array(buf, offset + pos, maxlen - pos, &(p[element].HUBO_STATE_RIGHT_HIP_PITCH), 1);
         if (thislen < 0) return thislen; else pos += thislen;
 
-        thislen = __double_encode_array(buf, offset + pos, maxlen - pos, &(p[element].STATE_RKP), 1);
+        thislen = __double_encode_array(buf, offset + pos, maxlen - pos, &(p[element].HUBO_STATE_RIGHT_KNEE_PITCH), 1);
         if (thislen < 0) return thislen; else pos += thislen;
 
-        thislen = __double_encode_array(buf, offset + pos, maxlen - pos, &(p[element].STATE_RAP), 1);
+        thislen = __double_encode_array(buf, offset + pos, maxlen - pos, &(p[element].HUBO_STATE_RIGHT_ANKLE_PITCH), 1);
         if (thislen < 0) return thislen; else pos += thislen;
 
-        thislen = __double_encode_array(buf, offset + pos, maxlen - pos, &(p[element].STATE_RAR), 1);
+        thislen = __double_encode_array(buf, offset + pos, maxlen - pos, &(p[element].HUBO_STATE_RIGHT_ANKLE_ROLL), 1);
         if (thislen < 0) return thislen; else pos += thislen;
 
         thislen = __double_encode_array(buf, offset + pos, maxlen - pos, &(p[element].base_link_xdot), 1);
@@ -379,57 +379,57 @@ int __lcmt_hubo_state_encoded_array_size(const lcmt_hubo_state *p, int elements)
 
         size += __double_encoded_array_size(&(p[element].HP), 1);
 
-        size += __double_encoded_array_size(&(p[element].STATE_LSP), 1);
+        size += __double_encoded_array_size(&(p[element].HUBO_STATE_LEFT_SHOULDER_PITCH), 1);
 
-        size += __double_encoded_array_size(&(p[element].STATE_LSR), 1);
+        size += __double_encoded_array_size(&(p[element].HUBO_STATE_LEFT_SHOULDER_ROLL), 1);
 
-        size += __double_encoded_array_size(&(p[element].STATE_LSY), 1);
+        size += __double_encoded_array_size(&(p[element].HUBO_STATE_LEFT_SHOULDER_YAW), 1);
 
-        size += __double_encoded_array_size(&(p[element].STATE_LEP), 1);
+        size += __double_encoded_array_size(&(p[element].HUBO_STATE_LEFT_ELBOW_PITCH), 1);
 
-        size += __double_encoded_array_size(&(p[element].STATE_LWY), 1);
+        size += __double_encoded_array_size(&(p[element].HUBO_STATE_LEFT_WRIST_YAW), 1);
 
-        size += __double_encoded_array_size(&(p[element].STATE_LWR), 1);
+        size += __double_encoded_array_size(&(p[element].HUBO_STATE_LEFT_WRIST_ROLL), 1);
 
-        size += __double_encoded_array_size(&(p[element].STATE_LWP), 1);
+        size += __double_encoded_array_size(&(p[element].HUBO_STATE_LEFT_WRIST_PITCH), 1);
 
-        size += __double_encoded_array_size(&(p[element].STATE_RSP), 1);
+        size += __double_encoded_array_size(&(p[element].HUBO_STATE_RIGHT_SHOULDER_PITCH), 1);
 
-        size += __double_encoded_array_size(&(p[element].STATE_RSR), 1);
+        size += __double_encoded_array_size(&(p[element].HUBO_STATE_RIGHT_SHOULDER_ROLL), 1);
 
-        size += __double_encoded_array_size(&(p[element].STATE_RSY), 1);
+        size += __double_encoded_array_size(&(p[element].HUBO_STATE_RIGHT_SHOULDER_YAW), 1);
 
-        size += __double_encoded_array_size(&(p[element].STATE_REP), 1);
+        size += __double_encoded_array_size(&(p[element].HUBO_STATE_RIGHT_ELBOW_PITCH), 1);
 
-        size += __double_encoded_array_size(&(p[element].STATE_RWY), 1);
+        size += __double_encoded_array_size(&(p[element].HUBO_STATE_RIGHT_WRIST_YAW), 1);
 
-        size += __double_encoded_array_size(&(p[element].STATE_RWR), 1);
+        size += __double_encoded_array_size(&(p[element].HUBO_STATE_RIGHT_WRIST_ROLL), 1);
 
-        size += __double_encoded_array_size(&(p[element].STATE_RWP), 1);
+        size += __double_encoded_array_size(&(p[element].HUBO_STATE_RIGHT_WRIST_PITCH), 1);
 
-        size += __double_encoded_array_size(&(p[element].STATE_LHY), 1);
+        size += __double_encoded_array_size(&(p[element].HUBO_STATE_LEFT_HAND_YAW), 1);
 
-        size += __double_encoded_array_size(&(p[element].STATE_LHR), 1);
+        size += __double_encoded_array_size(&(p[element].HUBO_STATE_LEFT_HAND_ROLL), 1);
 
-        size += __double_encoded_array_size(&(p[element].STATE_LHP), 1);
+        size += __double_encoded_array_size(&(p[element].HUBO_STATE_LEFT_HAND_PITCH), 1);
 
-        size += __double_encoded_array_size(&(p[element].STATE_LKP), 1);
+        size += __double_encoded_array_size(&(p[element].HUBO_STATE_LEFT_KNEE_PITCH), 1);
 
-        size += __double_encoded_array_size(&(p[element].STATE_LAP), 1);
+        size += __double_encoded_array_size(&(p[element].HUBO_STATE_LEFT_ANKLE_PITCH), 1);
 
-        size += __double_encoded_array_size(&(p[element].STATE_LAR), 1);
+        size += __double_encoded_array_size(&(p[element].HUBO_STATE_LEFT_ANKLE_ROLL), 1);
 
-        size += __double_encoded_array_size(&(p[element].STATE_RHY), 1);
+        size += __double_encoded_array_size(&(p[element].HUBO_STATE_RIGHT_HIP_YAW), 1);
 
-        size += __double_encoded_array_size(&(p[element].STATE_RHR), 1);
+        size += __double_encoded_array_size(&(p[element].HUBO_STATE_RIGHT_HIP_ROLL), 1);
 
-        size += __double_encoded_array_size(&(p[element].STATE_RHP), 1);
+        size += __double_encoded_array_size(&(p[element].HUBO_STATE_RIGHT_HIP_PITCH), 1);
 
-        size += __double_encoded_array_size(&(p[element].STATE_RKP), 1);
+        size += __double_encoded_array_size(&(p[element].HUBO_STATE_RIGHT_KNEE_PITCH), 1);
 
-        size += __double_encoded_array_size(&(p[element].STATE_RAP), 1);
+        size += __double_encoded_array_size(&(p[element].HUBO_STATE_RIGHT_ANKLE_PITCH), 1);
 
-        size += __double_encoded_array_size(&(p[element].STATE_RAR), 1);
+        size += __double_encoded_array_size(&(p[element].HUBO_STATE_RIGHT_ANKLE_ROLL), 1);
 
         size += __double_encoded_array_size(&(p[element].base_link_xdot), 1);
 
@@ -551,82 +551,82 @@ int __lcmt_hubo_state_decode_array(const void *buf, int offset, int maxlen, lcmt
         thislen = __double_decode_array(buf, offset + pos, maxlen - pos, &(p[element].HP), 1);
         if (thislen < 0) return thislen; else pos += thislen;
 
-        thislen = __double_decode_array(buf, offset + pos, maxlen - pos, &(p[element].STATE_LSP), 1);
+        thislen = __double_decode_array(buf, offset + pos, maxlen - pos, &(p[element].HUBO_STATE_LEFT_SHOULDER_PITCH), 1);
         if (thislen < 0) return thislen; else pos += thislen;
 
-        thislen = __double_decode_array(buf, offset + pos, maxlen - pos, &(p[element].STATE_LSR), 1);
+        thislen = __double_decode_array(buf, offset + pos, maxlen - pos, &(p[element].HUBO_STATE_LEFT_SHOULDER_ROLL), 1);
         if (thislen < 0) return thislen; else pos += thislen;
 
-        thislen = __double_decode_array(buf, offset + pos, maxlen - pos, &(p[element].STATE_LSY), 1);
+        thislen = __double_decode_array(buf, offset + pos, maxlen - pos, &(p[element].HUBO_STATE_LEFT_SHOULDER_YAW), 1);
         if (thislen < 0) return thislen; else pos += thislen;
 
-        thislen = __double_decode_array(buf, offset + pos, maxlen - pos, &(p[element].STATE_LEP), 1);
+        thislen = __double_decode_array(buf, offset + pos, maxlen - pos, &(p[element].HUBO_STATE_LEFT_ELBOW_PITCH), 1);
         if (thislen < 0) return thislen; else pos += thislen;
 
-        thislen = __double_decode_array(buf, offset + pos, maxlen - pos, &(p[element].STATE_LWY), 1);
+        thislen = __double_decode_array(buf, offset + pos, maxlen - pos, &(p[element].HUBO_STATE_LEFT_WRIST_YAW), 1);
         if (thislen < 0) return thislen; else pos += thislen;
 
-        thislen = __double_decode_array(buf, offset + pos, maxlen - pos, &(p[element].STATE_LWR), 1);
+        thislen = __double_decode_array(buf, offset + pos, maxlen - pos, &(p[element].HUBO_STATE_LEFT_WRIST_ROLL), 1);
         if (thislen < 0) return thislen; else pos += thislen;
 
-        thislen = __double_decode_array(buf, offset + pos, maxlen - pos, &(p[element].STATE_LWP), 1);
+        thislen = __double_decode_array(buf, offset + pos, maxlen - pos, &(p[element].HUBO_STATE_LEFT_WRIST_PITCH), 1);
         if (thislen < 0) return thislen; else pos += thislen;
 
-        thislen = __double_decode_array(buf, offset + pos, maxlen - pos, &(p[element].STATE_RSP), 1);
+        thislen = __double_decode_array(buf, offset + pos, maxlen - pos, &(p[element].HUBO_STATE_RIGHT_SHOULDER_PITCH), 1);
         if (thislen < 0) return thislen; else pos += thislen;
 
-        thislen = __double_decode_array(buf, offset + pos, maxlen - pos, &(p[element].STATE_RSR), 1);
+        thislen = __double_decode_array(buf, offset + pos, maxlen - pos, &(p[element].HUBO_STATE_RIGHT_SHOULDER_ROLL), 1);
         if (thislen < 0) return thislen; else pos += thislen;
 
-        thislen = __double_decode_array(buf, offset + pos, maxlen - pos, &(p[element].STATE_RSY), 1);
+        thislen = __double_decode_array(buf, offset + pos, maxlen - pos, &(p[element].HUBO_STATE_RIGHT_SHOULDER_YAW), 1);
         if (thislen < 0) return thislen; else pos += thislen;
 
-        thislen = __double_decode_array(buf, offset + pos, maxlen - pos, &(p[element].STATE_REP), 1);
+        thislen = __double_decode_array(buf, offset + pos, maxlen - pos, &(p[element].HUBO_STATE_RIGHT_ELBOW_PITCH), 1);
         if (thislen < 0) return thislen; else pos += thislen;
 
-        thislen = __double_decode_array(buf, offset + pos, maxlen - pos, &(p[element].STATE_RWY), 1);
+        thislen = __double_decode_array(buf, offset + pos, maxlen - pos, &(p[element].HUBO_STATE_RIGHT_WRIST_YAW), 1);
         if (thislen < 0) return thislen; else pos += thislen;
 
-        thislen = __double_decode_array(buf, offset + pos, maxlen - pos, &(p[element].STATE_RWR), 1);
+        thislen = __double_decode_array(buf, offset + pos, maxlen - pos, &(p[element].HUBO_STATE_RIGHT_WRIST_ROLL), 1);
         if (thislen < 0) return thislen; else pos += thislen;
 
-        thislen = __double_decode_array(buf, offset + pos, maxlen - pos, &(p[element].STATE_RWP), 1);
+        thislen = __double_decode_array(buf, offset + pos, maxlen - pos, &(p[element].HUBO_STATE_RIGHT_WRIST_PITCH), 1);
         if (thislen < 0) return thislen; else pos += thislen;
 
-        thislen = __double_decode_array(buf, offset + pos, maxlen - pos, &(p[element].STATE_LHY), 1);
+        thislen = __double_decode_array(buf, offset + pos, maxlen - pos, &(p[element].HUBO_STATE_LEFT_HAND_YAW), 1);
         if (thislen < 0) return thislen; else pos += thislen;
 
-        thislen = __double_decode_array(buf, offset + pos, maxlen - pos, &(p[element].STATE_LHR), 1);
+        thislen = __double_decode_array(buf, offset + pos, maxlen - pos, &(p[element].HUBO_STATE_LEFT_HAND_ROLL), 1);
         if (thislen < 0) return thislen; else pos += thislen;
 
-        thislen = __double_decode_array(buf, offset + pos, maxlen - pos, &(p[element].STATE_LHP), 1);
+        thislen = __double_decode_array(buf, offset + pos, maxlen - pos, &(p[element].HUBO_STATE_LEFT_HAND_PITCH), 1);
         if (thislen < 0) return thislen; else pos += thislen;
 
-        thislen = __double_decode_array(buf, offset + pos, maxlen - pos, &(p[element].STATE_LKP), 1);
+        thislen = __double_decode_array(buf, offset + pos, maxlen - pos, &(p[element].HUBO_STATE_LEFT_KNEE_PITCH), 1);
         if (thislen < 0) return thislen; else pos += thislen;
 
-        thislen = __double_decode_array(buf, offset + pos, maxlen - pos, &(p[element].STATE_LAP), 1);
+        thislen = __double_decode_array(buf, offset + pos, maxlen - pos, &(p[element].HUBO_STATE_LEFT_ANKLE_PITCH), 1);
         if (thislen < 0) return thislen; else pos += thislen;
 
-        thislen = __double_decode_array(buf, offset + pos, maxlen - pos, &(p[element].STATE_LAR), 1);
+        thislen = __double_decode_array(buf, offset + pos, maxlen - pos, &(p[element].HUBO_STATE_LEFT_ANKLE_ROLL), 1);
         if (thislen < 0) return thislen; else pos += thislen;
 
-        thislen = __double_decode_array(buf, offset + pos, maxlen - pos, &(p[element].STATE_RHY), 1);
+        thislen = __double_decode_array(buf, offset + pos, maxlen - pos, &(p[element].HUBO_STATE_RIGHT_HIP_YAW), 1);
         if (thislen < 0) return thislen; else pos += thislen;
 
-        thislen = __double_decode_array(buf, offset + pos, maxlen - pos, &(p[element].STATE_RHR), 1);
+        thislen = __double_decode_array(buf, offset + pos, maxlen - pos, &(p[element].HUBO_STATE_RIGHT_HIP_ROLL), 1);
         if (thislen < 0) return thislen; else pos += thislen;
 
-        thislen = __double_decode_array(buf, offset + pos, maxlen - pos, &(p[element].STATE_RHP), 1);
+        thislen = __double_decode_array(buf, offset + pos, maxlen - pos, &(p[element].HUBO_STATE_RIGHT_HIP_PITCH), 1);
         if (thislen < 0) return thislen; else pos += thislen;
 
-        thislen = __double_decode_array(buf, offset + pos, maxlen - pos, &(p[element].STATE_RKP), 1);
+        thislen = __double_decode_array(buf, offset + pos, maxlen - pos, &(p[element].HUBO_STATE_RIGHT_KNEE_PITCH), 1);
         if (thislen < 0) return thislen; else pos += thislen;
 
-        thislen = __double_decode_array(buf, offset + pos, maxlen - pos, &(p[element].STATE_RAP), 1);
+        thislen = __double_decode_array(buf, offset + pos, maxlen - pos, &(p[element].HUBO_STATE_RIGHT_ANKLE_PITCH), 1);
         if (thislen < 0) return thislen; else pos += thislen;
 
-        thislen = __double_decode_array(buf, offset + pos, maxlen - pos, &(p[element].STATE_RAR), 1);
+        thislen = __double_decode_array(buf, offset + pos, maxlen - pos, &(p[element].HUBO_STATE_RIGHT_ANKLE_ROLL), 1);
         if (thislen < 0) return thislen; else pos += thislen;
 
         thislen = __double_decode_array(buf, offset + pos, maxlen - pos, &(p[element].base_link_xdot), 1);
@@ -768,57 +768,57 @@ int __lcmt_hubo_state_decode_array_cleanup(lcmt_hubo_state *p, int elements)
 
         __double_decode_array_cleanup(&(p[element].HP), 1);
 
-        __double_decode_array_cleanup(&(p[element].STATE_LSP), 1);
+        __double_decode_array_cleanup(&(p[element].HUBO_STATE_LEFT_SHOULDER_PITCH), 1);
 
-        __double_decode_array_cleanup(&(p[element].STATE_LSR), 1);
+        __double_decode_array_cleanup(&(p[element].HUBO_STATE_LEFT_SHOULDER_ROLL), 1);
 
-        __double_decode_array_cleanup(&(p[element].STATE_LSY), 1);
+        __double_decode_array_cleanup(&(p[element].HUBO_STATE_LEFT_SHOULDER_YAW), 1);
 
-        __double_decode_array_cleanup(&(p[element].STATE_LEP), 1);
+        __double_decode_array_cleanup(&(p[element].HUBO_STATE_LEFT_ELBOW_PITCH), 1);
 
-        __double_decode_array_cleanup(&(p[element].STATE_LWY), 1);
+        __double_decode_array_cleanup(&(p[element].HUBO_STATE_LEFT_WRIST_YAW), 1);
 
-        __double_decode_array_cleanup(&(p[element].STATE_LWR), 1);
+        __double_decode_array_cleanup(&(p[element].HUBO_STATE_LEFT_WRIST_ROLL), 1);
 
-        __double_decode_array_cleanup(&(p[element].STATE_LWP), 1);
+        __double_decode_array_cleanup(&(p[element].HUBO_STATE_LEFT_WRIST_PITCH), 1);
 
-        __double_decode_array_cleanup(&(p[element].STATE_RSP), 1);
+        __double_decode_array_cleanup(&(p[element].HUBO_STATE_RIGHT_SHOULDER_PITCH), 1);
 
-        __double_decode_array_cleanup(&(p[element].STATE_RSR), 1);
+        __double_decode_array_cleanup(&(p[element].HUBO_STATE_RIGHT_SHOULDER_ROLL), 1);
 
-        __double_decode_array_cleanup(&(p[element].STATE_RSY), 1);
+        __double_decode_array_cleanup(&(p[element].HUBO_STATE_RIGHT_SHOULDER_YAW), 1);
 
-        __double_decode_array_cleanup(&(p[element].STATE_REP), 1);
+        __double_decode_array_cleanup(&(p[element].HUBO_STATE_RIGHT_ELBOW_PITCH), 1);
 
-        __double_decode_array_cleanup(&(p[element].STATE_RWY), 1);
+        __double_decode_array_cleanup(&(p[element].HUBO_STATE_RIGHT_WRIST_YAW), 1);
 
-        __double_decode_array_cleanup(&(p[element].STATE_RWR), 1);
+        __double_decode_array_cleanup(&(p[element].HUBO_STATE_RIGHT_WRIST_ROLL), 1);
 
-        __double_decode_array_cleanup(&(p[element].STATE_RWP), 1);
+        __double_decode_array_cleanup(&(p[element].HUBO_STATE_RIGHT_WRIST_PITCH), 1);
 
-        __double_decode_array_cleanup(&(p[element].STATE_LHY), 1);
+        __double_decode_array_cleanup(&(p[element].HUBO_STATE_LEFT_HAND_YAW), 1);
 
-        __double_decode_array_cleanup(&(p[element].STATE_LHR), 1);
+        __double_decode_array_cleanup(&(p[element].HUBO_STATE_LEFT_HAND_ROLL), 1);
 
-        __double_decode_array_cleanup(&(p[element].STATE_LHP), 1);
+        __double_decode_array_cleanup(&(p[element].HUBO_STATE_LEFT_HAND_PITCH), 1);
 
-        __double_decode_array_cleanup(&(p[element].STATE_LKP), 1);
+        __double_decode_array_cleanup(&(p[element].HUBO_STATE_LEFT_KNEE_PITCH), 1);
 
-        __double_decode_array_cleanup(&(p[element].STATE_LAP), 1);
+        __double_decode_array_cleanup(&(p[element].HUBO_STATE_LEFT_ANKLE_PITCH), 1);
 
-        __double_decode_array_cleanup(&(p[element].STATE_LAR), 1);
+        __double_decode_array_cleanup(&(p[element].HUBO_STATE_LEFT_ANKLE_ROLL), 1);
 
-        __double_decode_array_cleanup(&(p[element].STATE_RHY), 1);
+        __double_decode_array_cleanup(&(p[element].HUBO_STATE_RIGHT_HIP_YAW), 1);
 
-        __double_decode_array_cleanup(&(p[element].STATE_RHR), 1);
+        __double_decode_array_cleanup(&(p[element].HUBO_STATE_RIGHT_HIP_ROLL), 1);
 
-        __double_decode_array_cleanup(&(p[element].STATE_RHP), 1);
+        __double_decode_array_cleanup(&(p[element].HUBO_STATE_RIGHT_HIP_PITCH), 1);
 
-        __double_decode_array_cleanup(&(p[element].STATE_RKP), 1);
+        __double_decode_array_cleanup(&(p[element].HUBO_STATE_RIGHT_KNEE_PITCH), 1);
 
-        __double_decode_array_cleanup(&(p[element].STATE_RAP), 1);
+        __double_decode_array_cleanup(&(p[element].HUBO_STATE_RIGHT_ANKLE_PITCH), 1);
 
-        __double_decode_array_cleanup(&(p[element].STATE_RAR), 1);
+        __double_decode_array_cleanup(&(p[element].HUBO_STATE_RIGHT_ANKLE_ROLL), 1);
 
         __double_decode_array_cleanup(&(p[element].base_link_xdot), 1);
 
@@ -944,57 +944,57 @@ int __lcmt_hubo_state_clone_array(const lcmt_hubo_state *p, lcmt_hubo_state *q, 
 
         __double_clone_array(&(p[element].HP), &(q[element].HP), 1);
 
-        __double_clone_array(&(p[element].STATE_LSP), &(q[element].STATE_LSP), 1);
+        __double_clone_array(&(p[element].HUBO_STATE_LEFT_SHOULDER_PITCH), &(q[element].HUBO_STATE_LEFT_SHOULDER_PITCH), 1);
 
-        __double_clone_array(&(p[element].STATE_LSR), &(q[element].STATE_LSR), 1);
+        __double_clone_array(&(p[element].HUBO_STATE_LEFT_SHOULDER_ROLL), &(q[element].HUBO_STATE_LEFT_SHOULDER_ROLL), 1);
 
-        __double_clone_array(&(p[element].STATE_LSY), &(q[element].STATE_LSY), 1);
+        __double_clone_array(&(p[element].HUBO_STATE_LEFT_SHOULDER_YAW), &(q[element].HUBO_STATE_LEFT_SHOULDER_YAW), 1);
 
-        __double_clone_array(&(p[element].STATE_LEP), &(q[element].STATE_LEP), 1);
+        __double_clone_array(&(p[element].HUBO_STATE_LEFT_ELBOW_PITCH), &(q[element].HUBO_STATE_LEFT_ELBOW_PITCH), 1);
 
-        __double_clone_array(&(p[element].STATE_LWY), &(q[element].STATE_LWY), 1);
+        __double_clone_array(&(p[element].HUBO_STATE_LEFT_WRIST_YAW), &(q[element].HUBO_STATE_LEFT_WRIST_YAW), 1);
 
-        __double_clone_array(&(p[element].STATE_LWR), &(q[element].STATE_LWR), 1);
+        __double_clone_array(&(p[element].HUBO_STATE_LEFT_WRIST_ROLL), &(q[element].HUBO_STATE_LEFT_WRIST_ROLL), 1);
 
-        __double_clone_array(&(p[element].STATE_LWP), &(q[element].STATE_LWP), 1);
+        __double_clone_array(&(p[element].HUBO_STATE_LEFT_WRIST_PITCH), &(q[element].HUBO_STATE_LEFT_WRIST_PITCH), 1);
 
-        __double_clone_array(&(p[element].STATE_RSP), &(q[element].STATE_RSP), 1);
+        __double_clone_array(&(p[element].HUBO_STATE_RIGHT_SHOULDER_PITCH), &(q[element].HUBO_STATE_RIGHT_SHOULDER_PITCH), 1);
 
-        __double_clone_array(&(p[element].STATE_RSR), &(q[element].STATE_RSR), 1);
+        __double_clone_array(&(p[element].HUBO_STATE_RIGHT_SHOULDER_ROLL), &(q[element].HUBO_STATE_RIGHT_SHOULDER_ROLL), 1);
 
-        __double_clone_array(&(p[element].STATE_RSY), &(q[element].STATE_RSY), 1);
+        __double_clone_array(&(p[element].HUBO_STATE_RIGHT_SHOULDER_YAW), &(q[element].HUBO_STATE_RIGHT_SHOULDER_YAW), 1);
 
-        __double_clone_array(&(p[element].STATE_REP), &(q[element].STATE_REP), 1);
+        __double_clone_array(&(p[element].HUBO_STATE_RIGHT_ELBOW_PITCH), &(q[element].HUBO_STATE_RIGHT_ELBOW_PITCH), 1);
 
-        __double_clone_array(&(p[element].STATE_RWY), &(q[element].STATE_RWY), 1);
+        __double_clone_array(&(p[element].HUBO_STATE_RIGHT_WRIST_YAW), &(q[element].HUBO_STATE_RIGHT_WRIST_YAW), 1);
 
-        __double_clone_array(&(p[element].STATE_RWR), &(q[element].STATE_RWR), 1);
+        __double_clone_array(&(p[element].HUBO_STATE_RIGHT_WRIST_ROLL), &(q[element].HUBO_STATE_RIGHT_WRIST_ROLL), 1);
 
-        __double_clone_array(&(p[element].STATE_RWP), &(q[element].STATE_RWP), 1);
+        __double_clone_array(&(p[element].HUBO_STATE_RIGHT_WRIST_PITCH), &(q[element].HUBO_STATE_RIGHT_WRIST_PITCH), 1);
 
-        __double_clone_array(&(p[element].STATE_LHY), &(q[element].STATE_LHY), 1);
+        __double_clone_array(&(p[element].HUBO_STATE_LEFT_HAND_YAW), &(q[element].HUBO_STATE_LEFT_HAND_YAW), 1);
 
-        __double_clone_array(&(p[element].STATE_LHR), &(q[element].STATE_LHR), 1);
+        __double_clone_array(&(p[element].HUBO_STATE_LEFT_HAND_ROLL), &(q[element].HUBO_STATE_LEFT_HAND_ROLL), 1);
 
-        __double_clone_array(&(p[element].STATE_LHP), &(q[element].STATE_LHP), 1);
+        __double_clone_array(&(p[element].HUBO_STATE_LEFT_HAND_PITCH), &(q[element].HUBO_STATE_LEFT_HAND_PITCH), 1);
 
-        __double_clone_array(&(p[element].STATE_LKP), &(q[element].STATE_LKP), 1);
+        __double_clone_array(&(p[element].HUBO_STATE_LEFT_KNEE_PITCH), &(q[element].HUBO_STATE_LEFT_KNEE_PITCH), 1);
 
-        __double_clone_array(&(p[element].STATE_LAP), &(q[element].STATE_LAP), 1);
+        __double_clone_array(&(p[element].HUBO_STATE_LEFT_ANKLE_PITCH), &(q[element].HUBO_STATE_LEFT_ANKLE_PITCH), 1);
 
-        __double_clone_array(&(p[element].STATE_LAR), &(q[element].STATE_LAR), 1);
+        __double_clone_array(&(p[element].HUBO_STATE_LEFT_ANKLE_ROLL), &(q[element].HUBO_STATE_LEFT_ANKLE_ROLL), 1);
 
-        __double_clone_array(&(p[element].STATE_RHY), &(q[element].STATE_RHY), 1);
+        __double_clone_array(&(p[element].HUBO_STATE_RIGHT_HIP_YAW), &(q[element].HUBO_STATE_RIGHT_HIP_YAW), 1);
 
-        __double_clone_array(&(p[element].STATE_RHR), &(q[element].STATE_RHR), 1);
+        __double_clone_array(&(p[element].HUBO_STATE_RIGHT_HIP_ROLL), &(q[element].HUBO_STATE_RIGHT_HIP_ROLL), 1);
 
-        __double_clone_array(&(p[element].STATE_RHP), &(q[element].STATE_RHP), 1);
+        __double_clone_array(&(p[element].HUBO_STATE_RIGHT_HIP_PITCH), &(q[element].HUBO_STATE_RIGHT_HIP_PITCH), 1);
 
-        __double_clone_array(&(p[element].STATE_RKP), &(q[element].STATE_RKP), 1);
+        __double_clone_array(&(p[element].HUBO_STATE_RIGHT_KNEE_PITCH), &(q[element].HUBO_STATE_RIGHT_KNEE_PITCH), 1);
 
-        __double_clone_array(&(p[element].STATE_RAP), &(q[element].STATE_RAP), 1);
+        __double_clone_array(&(p[element].HUBO_STATE_RIGHT_ANKLE_PITCH), &(q[element].HUBO_STATE_RIGHT_ANKLE_PITCH), 1);
 
-        __double_clone_array(&(p[element].STATE_RAR), &(q[element].STATE_RAR), 1);
+        __double_clone_array(&(p[element].HUBO_STATE_RIGHT_ANKLE_ROLL), &(q[element].HUBO_STATE_RIGHT_ANKLE_ROLL), 1);
 
         __double_clone_array(&(p[element].base_link_xdot), &(q[element].base_link_xdot), 1);
 
